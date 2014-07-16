@@ -24,35 +24,50 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_ajouter_changementhoraire=0x7f080013;
-        public static final int action_ajouter_cours=0x7f080012;
-        public static final int action_ajouter_examen=0x7f080011;
-        public static final int action_ajouter_travaux=0x7f080010;
-        public static final int horizontalScrollView1=0x7f080000;
-        public static final int jour1=0x7f080002;
-        public static final int jour1_label=0x7f080003;
-        public static final int jour2=0x7f080004;
-        public static final int jour2_label=0x7f080005;
-        public static final int jour3=0x7f080006;
-        public static final int jour3_label=0x7f080007;
-        public static final int jour4=0x7f080008;
-        public static final int jour4_label=0x7f080009;
-        public static final int jour5=0x7f08000a;
-        public static final int jour5_label=0x7f08000b;
-        public static final int jour6=0x7f08000c;
-        public static final int jour6_label=0x7f08000d;
-        public static final int jour7=0x7f08000e;
-        public static final int jour7_label=0x7f08000f;
-        public static final int scrollView1=0x7f080001;
+        public static final int action_ajouter_changementhoraire=0x7f08001c;
+        public static final int action_ajouter_cours=0x7f08001b;
+        public static final int action_ajouter_examen=0x7f08001a;
+        public static final int action_ajouter_travaux=0x7f080019;
+        public static final int action_settings=0x7f080018;
+        public static final int ajouter_travail_bouton_enregistrer=0x7f080007;
+        public static final int datePicker1=0x7f080002;
+        public static final int editText1=0x7f080001;
+        public static final int editText2=0x7f080006;
+        public static final int horizontalScrollView1=0x7f080008;
+        public static final int jour1=0x7f08000a;
+        public static final int jour1_label=0x7f08000b;
+        public static final int jour2=0x7f08000c;
+        public static final int jour2_label=0x7f08000d;
+        public static final int jour3=0x7f08000e;
+        public static final int jour3_label=0x7f08000f;
+        public static final int jour4=0x7f080010;
+        public static final int jour4_label=0x7f080011;
+        public static final int jour5=0x7f080012;
+        public static final int jour5_label=0x7f080013;
+        public static final int jour6=0x7f080014;
+        public static final int jour6_label=0x7f080015;
+        public static final int jour7=0x7f080016;
+        public static final int jour7_label=0x7f080017;
+        public static final int scrollView1=0x7f080009;
+        public static final int textView1=0x7f080000;
+        public static final int textView2=0x7f080003;
+        public static final int textView3=0x7f080005;
+        public static final int timePicker1=0x7f080004;
     }
     public static final class layout {
-        public static final int activity_vue_semaine=0x7f030000;
+        public static final int activity_ajouter_travail=0x7f030000;
+        public static final int activity_vue_semaine=0x7f030001;
     }
     public static final class menu {
-        public static final int vue_semaine=0x7f070000;
+        public static final int ajouter_travail=0x7f070000;
+        public static final int vue_semaine=0x7f070001;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
+        public static final int ajouter_travail_dateremise=0x7f05000e;
+        public static final int ajouter_travail_heureremise=0x7f05000f;
+        public static final int ajouter_travail_notes=0x7f050010;
+        public static final int ajouter_travail_titre=0x7f05000d;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050002;
         public static final int jeudi=0x7f050006;
@@ -63,6 +78,7 @@ public final class R {
         public static final int menu_ajouter_examen=0x7f05000a;
         public static final int menu_ajouter_travaux=0x7f050009;
         public static final int mercredi=0x7f050005;
+        public static final int title_activity_ajouter_travail=0x7f05000c;
         public static final int vendredi=0x7f050007;
     }
     public static final class style {

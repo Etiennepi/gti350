@@ -6,8 +6,10 @@ import java.util.Locale;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.util.AttributeSet;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -41,6 +43,33 @@ public class VueSemaine extends Activity {
         return true;
     }
     
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+    	Intent intent = null;
+    	
+        switch (item.getItemId()) {
+            case R.id.action_ajouter_changementhoraire:
+                // openSearch();
+                return true;
+            case R.id.action_ajouter_cours:
+                // composeMessage();
+                return true;
+            case R.id.action_ajouter_examen:
+                // composeMessage();
+                return true;
+            case R.id.action_ajouter_travaux:
+            	intent = new Intent(this, AjouterTravail.class);
+            	break;
+        }
+        if( intent != null ) {
+        	startActivity(intent);
+        	return true;
+        }
+        else {
+        	return super.onOptionsItemSelected(item);
+        }
+    }
     
     public class VueJour extends LinearLayout {
 
