@@ -24,7 +24,10 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080010;
+        public static final int action_ajouter_changementhoraire=0x7f080013;
+        public static final int action_ajouter_cours=0x7f080012;
+        public static final int action_ajouter_examen=0x7f080011;
+        public static final int action_ajouter_travaux=0x7f080010;
         public static final int horizontalScrollView1=0x7f080000;
         public static final int jour1=0x7f080002;
         public static final int jour1_label=0x7f080003;
@@ -55,6 +58,10 @@ public final class R {
         public static final int jeudi=0x7f050006;
         public static final int lundi=0x7f050003;
         public static final int mardi=0x7f050004;
+        public static final int menu_ajouter_changementhoraire=0x7f05000b;
+        public static final int menu_ajouter_cours=0x7f050008;
+        public static final int menu_ajouter_examen=0x7f05000a;
+        public static final int menu_ajouter_travaux=0x7f050009;
         public static final int mercredi=0x7f050005;
         public static final int vendredi=0x7f050007;
     }

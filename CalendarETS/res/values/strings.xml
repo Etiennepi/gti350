@@ -5,10 +5,18 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     
+    
+    
     <string name="lundi">Lundi</string>
     <string name="mardi">Hello world!</string>
     <string name="mercredi">Hello world!</string>
     <string name="jeudi">Hello world!</string>
     <string name="vendredi">Hello world!</string>
 
+    
+    <string name="menu_ajouter_cours">Ajouter Cours</string>
+    <string name="menu_ajouter_travaux">Ajouter Travaux</string>
+    <string name="menu_ajouter_examen">Ajouter Examen</string>
+    <string name="menu_ajouter_changementhoraire">Ajouter Changement d\'horaire</string>
+    
 </resources>

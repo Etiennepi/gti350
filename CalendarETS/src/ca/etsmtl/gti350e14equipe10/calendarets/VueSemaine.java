@@ -1,6 +1,5 @@
 package ca.etsmtl.gti350e14equipe10.calendarets;
 
-import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
