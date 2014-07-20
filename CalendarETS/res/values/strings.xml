@@ -19,6 +19,7 @@
     <string name="ajouter_travail_dateremise">Date de remise</string>
     <string name="ajouter_travail_heureremise">Heure de remise</string>
     <string name="ajouter_travail_notes">Notes</string>
+    <string name="pick_date">Choisissez une date</string>
     <string name="title_activity_ajouter_cours">AjouterCour</string>
     <string name="ajouter_cour_titre">Titre</string>
     <string name="ajouter_cour_titre_hint">Titre du cour a ajouter</string>
