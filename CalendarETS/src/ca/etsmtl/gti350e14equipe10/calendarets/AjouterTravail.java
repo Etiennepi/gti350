@@ -100,7 +100,7 @@ public class AjouterTravail extends FragmentActivity {
 		public void onDateSet(DatePicker view, int year, int month, int day) {
 			
 			String date = new StringBuilder().append(month+1).append("-").append(day).append("-").append(year).toString();
-			Button bouton = (Button)findViewById(R.id.pick_date_button);
+			Button bouton = (Button)findViewById(R.id.travail_pick_date_button);
 			bouton.setText(date);
 			
 		}

@@ -50,8 +50,8 @@ public class VueSemaine extends Activity {
     	
         switch (item.getItemId()) {
             case R.id.action_ajouter_changementhoraire:
-                // openSearch();
-                return true;
+                intent = new Intent(this, AjouterChangementHorraire.class);
+                break;
             case R.id.action_ajouter_cours:
                 intent = new Intent(this, AjouterCour.class);
                 break;

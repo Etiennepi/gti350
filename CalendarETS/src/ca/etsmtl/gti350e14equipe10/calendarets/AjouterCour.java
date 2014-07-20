@@ -26,13 +26,12 @@ public class AjouterCour extends FragmentActivity{
 		final Activity ajouterCourActivity = this;
 		setContentView(R.layout.activity_ajouter_cours);
 		
+		//Rendre le spinner fonctionnel et y ajouter les journees
 		Spinner spinner = (Spinner) findViewById(R.id.ajouterCourJourSpinner);
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
 		        R.array.jour_array, android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinner.setAdapter(adapter);
-		
-		
 		
 		Button btn = (Button) findViewById(R.id.ajouter_cour_bouton_enregistrer);
 		btn.setOnClickListener(new OnClickListener() {

@@ -52,7 +52,7 @@
                 android:text="@string/ajouter_travail_dateremise" />
 
             <Button 
-                android:id="@+id/pick_date_button"
+                android:id="@+id/travail_pick_date_button"
 			    android:layout_width="wrap_content" 
 			    android:layout_height="wrap_content"
 			    android:text="@string/pick_date" 
