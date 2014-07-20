@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">CalendarETS</string>
+    <string name="ok">OK</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="lundi">Lundi</string>
@@ -14,9 +15,31 @@
     <string name="menu_ajouter_examen">Ajouter Examen</string>
     <string name="menu_ajouter_changementhoraire">Ajouter Changement d\'horaire</string>
     <string name="title_activity_ajouter_travail">AjouterTravail</string>
-
     <string name="ajouter_travail_titre">Titre du travail</string>
     <string name="ajouter_travail_dateremise">Date de remise</string>
     <string name="ajouter_travail_heureremise">Heure de remise</string>
     <string name="ajouter_travail_notes">Notes</string>
+    <string name="title_activity_ajouter_cours">AjouterCour</string>
+    <string name="ajouter_cour_titre">Titre</string>
+    <string name="ajouter_cour_titre_hint">Titre du cour a ajouter</string>
+    <string name="ajouter_cour_journee">Journee</string>
+    <string name="ajouter_cour_local">Local</string>
+    <string name="ajouter_cour_local_hint">Local</string>
+    <string name="ajouter_cour_heure_debut">Heure debut</string>
+    <string name="ajouter_cour_heure_fin">Heure fin</string>
+
+    <string name="bouton_choisir_heure">Heure</string>
+    
+    <string-array name="jour_array">
+        <item>Lundi</item>
+        <item>Mardi</item>
+        <item>Mercredi</item>
+        <item>Jeudi</item>
+        <item>Vendredi</item>
+        <item>Samedi</item>
+        <item>Dimanche</item>
+	</string-array>
+	
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

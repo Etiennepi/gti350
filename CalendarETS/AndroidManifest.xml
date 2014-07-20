@@ -26,6 +26,10 @@
             android:name="ca.etsmtl.gti350e14equipe10.calendarets.AjouterTravail"
             android:label="@string/title_activity_ajouter_travail" >
         </activity>
+        <activity
+            android:name="ca.etsmtl.gti350e14equipe10.calendarets.AjouterCour"
+            android:label="@string/title_activity_ajouter_cours" >
+        </activity>
     </application>
 
 </manifest>
