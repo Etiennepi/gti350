@@ -6,6 +6,7 @@ import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.DatePickerDialog.OnDateSetListener;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
@@ -34,6 +35,11 @@ public class AjouterChangementHorraire extends FragmentActivity {
 
 			@Override
 			public void onClick(View arg0) {
+				
+				
+				Intent intent = new Intent(ajouterChangementHorraireActivity, VueSemaine.class);
+				startActivity(intent);
+				
 			}
 			
 		});
