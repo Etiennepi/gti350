@@ -32,11 +32,11 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_ajouter_changementhoraire=0x7f09002b;
-        public static final int action_ajouter_cours=0x7f09002a;
-        public static final int action_ajouter_examen=0x7f090029;
-        public static final int action_ajouter_travaux=0x7f090028;
-        public static final int action_settings=0x7f090027;
+        public static final int action_ajouter_changementhoraire=0x7f09002c;
+        public static final int action_ajouter_cours=0x7f09002b;
+        public static final int action_ajouter_examen=0x7f09002a;
+        public static final int action_ajouter_travaux=0x7f090029;
+        public static final int action_settings=0x7f090028;
         public static final int ajouterCourEditLocal=0x7f09000a;
         public static final int ajouterCourEditTitre=0x7f090006;
         public static final int ajouterCourJourSpinner=0x7f090008;
@@ -49,32 +49,33 @@ public final class R {
         public static final int ajouter_cour_bouton_enregistrer=0x7f09000f;
         public static final int ajouter_cour_bouton_heure_debut=0x7f09000c;
         public static final int ajouter_cour_bouton_heure_fin=0x7f09000e;
-        public static final int ajouter_travail_bouton_enregistrer=0x7f090016;
+        public static final int ajouter_travail_bouton_enregistrer=0x7f090017;
+        public static final int ajouter_travail_bouton_heure=0x7f090014;
         public static final int changement_pick_date_button=0x7f090001;
         public static final int changerHorraireJourSpinner=0x7f090003;
         public static final int changerHorraireTexTJour=0x7f090002;
         public static final int editText1=0x7f090011;
-        public static final int editText2=0x7f090015;
-        public static final int horizontalScrollView1=0x7f090017;
-        public static final int jour1=0x7f090019;
-        public static final int jour1_label=0x7f09001a;
-        public static final int jour2=0x7f09001b;
-        public static final int jour2_label=0x7f09001c;
-        public static final int jour3=0x7f09001d;
-        public static final int jour3_label=0x7f09001e;
-        public static final int jour4=0x7f09001f;
-        public static final int jour4_label=0x7f090020;
-        public static final int jour5=0x7f090021;
-        public static final int jour5_label=0x7f090022;
-        public static final int jour6=0x7f090023;
-        public static final int jour6_label=0x7f090024;
-        public static final int jour7=0x7f090025;
-        public static final int jour7_label=0x7f090026;
+        public static final int editText2=0x7f090016;
+        public static final int horizontalScrollView1=0x7f090018;
+        public static final int jour1=0x7f09001a;
+        public static final int jour1_label=0x7f09001b;
+        public static final int jour2=0x7f09001c;
+        public static final int jour2_label=0x7f09001d;
+        public static final int jour3=0x7f09001e;
+        public static final int jour3_label=0x7f09001f;
+        public static final int jour4=0x7f090020;
+        public static final int jour4_label=0x7f090021;
+        public static final int jour5=0x7f090022;
+        public static final int jour5_label=0x7f090023;
+        public static final int jour6=0x7f090024;
+        public static final int jour6_label=0x7f090025;
+        public static final int jour7=0x7f090026;
+        public static final int jour7_label=0x7f090027;
         public static final int nom_evenement=0x7f090000;
-        public static final int scrollView1=0x7f090018;
+        public static final int scrollView1=0x7f090019;
         public static final int textView1=0x7f090010;
         public static final int textView2=0x7f090013;
-        public static final int textView3=0x7f090014;
+        public static final int textView3=0x7f090015;
         public static final int travail_pick_date_button=0x7f090012;
     }
     public static final class layout {
@@ -92,6 +93,7 @@ public final class R {
     public static final class string {
         public static final int TitreEvenement=0x7f05001d;
         public static final int action_settings=0x7f050002;
+        public static final int ajouter_changement_date=0x7f05001f;
         public static final int ajouter_cour_heure_debut=0x7f050019;
         public static final int ajouter_cour_heure_fin=0x7f05001a;
         public static final int ajouter_cour_journee=0x7f050016;
@@ -105,7 +107,7 @@ public final class R {
         public static final int ajouter_travail_titre=0x7f05000e;
         public static final int app_name=0x7f050000;
         public static final int bouton_choisir_heure=0x7f05001b;
-        public static final int hello_blank_fragment=0x7f05001f;
+        public static final int hello_blank_fragment=0x7f050020;
         public static final int hello_world=0x7f050003;
         public static final int jeudi=0x7f050007;
         public static final int lundi=0x7f050004;
@@ -118,7 +120,7 @@ public final class R {
         public static final int nom_evenement_hint=0x7f05001e;
         public static final int ok=0x7f050001;
         public static final int pick_date=0x7f050012;
-        public static final int title_activity_ajouter_changement_de_date=0x7f050020;
+        public static final int title_activity_ajouter_changement_de_date=0x7f050021;
         public static final int title_activity_ajouter_changement_horraire=0x7f05001c;
         public static final int title_activity_ajouter_cours=0x7f050013;
         public static final int title_activity_ajouter_travail=0x7f05000d;

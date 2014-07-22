@@ -46,7 +46,7 @@
 	            <TextView
 	                android:layout_width="wrap_content"
 	                android:layout_height="wrap_content"
-	                android:text="@string/ajouter_travail_dateremise" />
+	                android:text="@string/ajouter_changement_date" />
 	
 	            <Button 
 	                android:id="@+id/changement_pick_date_button"

@@ -71,7 +71,7 @@
                 android:text="@string/ajouter_travail_heureremise" />
 
             <Button
-                android:id="@+id/ajouter_cour_bouton_heure_debut"
+                android:id="@+id/ajouter_travail_bouton_heure"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/bouton_choisir_heure"

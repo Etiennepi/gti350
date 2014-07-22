@@ -2,6 +2,9 @@ package ca.etsmtl.gti350e14equipe10.calendarets;
 
 import java.util.Calendar;
 
+import ca.etsmtl.gti350e14equipe10.calendarets.Calendrier.ChangementHorraire;
+import ca.etsmtl.gti350e14equipe10.calendarets.Calendrier.Cour;
+
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
@@ -15,11 +18,15 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TimePicker;
 
 public class AjouterCour extends FragmentActivity{
-
+	
+	private String heureDebut;
+	private String heureFin;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -27,7 +34,7 @@ public class AjouterCour extends FragmentActivity{
 		setContentView(R.layout.activity_ajouter_cours);
 		
 		//Rendre le spinner fonctionnel et y ajouter les journees
-		Spinner spinner = (Spinner) findViewById(R.id.ajouterCourJourSpinner);
+		final Spinner spinner = (Spinner) findViewById(R.id.ajouterCourJourSpinner);
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
 		        R.array.jour_array, android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -38,6 +45,15 @@ public class AjouterCour extends FragmentActivity{
 
 			@Override
 			public void onClick(View arg0) {
+				EditText textTitre = (EditText)findViewById(R.id.ajouterCourEditTitre);
+				String titre = textTitre.getText().toString();
+				String journee = spinner.getSelectedItem().toString();
+				
+				EditText textLocal = (EditText)findViewById(R.id.ajouterCourEditLocal);
+				String local = textLocal.getText().toString();
+				
+				Cour c = new Cour(titre, journee, local, heureDebut, heureFin);
+				Calendrier.getInstance().ajouterCour(c);
 				
 				
 				Intent intent = new Intent(ajouterCourActivity, VueSemaine.class);
@@ -78,6 +94,7 @@ public class AjouterCour extends FragmentActivity{
 	    	String heure = new StringBuilder().append(hourOfDay).append(":").append(minute).toString();
 	    	Button bouton = (Button)findViewById(R.id.ajouter_cour_bouton_heure_debut);
 	        bouton.setText(heure);
+	        heureDebut = heure;
 	    }
 
 	}
@@ -101,6 +118,7 @@ public class AjouterCour extends FragmentActivity{
 	    	String heure = new StringBuilder().append(hourOfDay).append(":").append(minute).toString();
 	    	Button bouton = (Button)findViewById(R.id.ajouter_cour_bouton_heure_fin);
 	        bouton.setText(heure);
+	        heureFin = heure;
 	    }
 
 	}

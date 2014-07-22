@@ -32,6 +32,7 @@
     <string name="title_activity_ajouter_changement_horraire">Changement D\'Horraire</string>
     <string name="TitreEvenement">Evenement</string>
     <string name="nom_evenement_hint">Raison du changement</string>
+    <string name ="ajouter_changement_date">Date du changement d\'horraire</string>
     
     <string-array name="jour_array">
         <item>Lundi</item>

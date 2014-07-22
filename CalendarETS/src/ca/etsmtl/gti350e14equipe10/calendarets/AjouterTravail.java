@@ -20,9 +20,12 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TimePicker;
 
 public class AjouterTravail extends FragmentActivity { 
+	private GregorianCalendar dateheure = (GregorianCalendar) GregorianCalendar.getInstance();
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,9 +37,10 @@ public class AjouterTravail extends FragmentActivity {
 
 			@Override
 			public void onClick(View arg0) {
-				String notes = "";
-				String titre = "";
-				GregorianCalendar dateheure = (GregorianCalendar) GregorianCalendar.getInstance();
+				EditText textNotes = (EditText) findViewById(R.id.editText1);
+				String notes = textNotes.getText().toString();
+				EditText textTitre = (EditText) findViewById(R.id.editText2);
+				String titre = textTitre.getText().toString();
 				
 				Travail t = new Travail(titre, dateheure, notes);
 				Calendrier.getInstance().ajouterTravail(t);
@@ -71,8 +75,9 @@ public class AjouterTravail extends FragmentActivity {
 
 	    public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
 	    	String heure = new StringBuilder().append(hourOfDay).append(":").append(minute).toString();
-	    	Button bouton = (Button)findViewById(R.id.ajouter_cour_bouton_heure_debut);
+	    	Button bouton = (Button)findViewById(R.id.ajouter_travail_bouton_heure);
 	        bouton.setText(heure);
+	        dateheure.set(dateheure.YEAR, dateheure.MONTH, dateheure.DAY_OF_MONTH, hourOfDay, minute);
 	    }
 
 	}
@@ -102,6 +107,7 @@ public class AjouterTravail extends FragmentActivity {
 			String date = new StringBuilder().append(month+1).append("-").append(day).append("-").append(year).toString();
 			Button bouton = (Button)findViewById(R.id.travail_pick_date_button);
 			bouton.setText(date);
+			dateheure.set(year, month, day);
 			
 		}
 
