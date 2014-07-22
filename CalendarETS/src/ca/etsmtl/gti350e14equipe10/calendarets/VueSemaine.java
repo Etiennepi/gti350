@@ -26,7 +26,8 @@ public class VueSemaine extends Activity {
         int[] jours = { R.id.jour1_label, R.id.jour2_label, R.id.jour3_label , R.id.jour4_label , R.id.jour5_label , R.id.jour6_label, R.id.jour7_label  };
         
         for( int id : jours ) {
-        	String jourCourant = dateCourante.getDisplayName(GregorianCalendar.DAY_OF_WEEK, GregorianCalendar.LONG, Locale.CANADA_FRENCH);
+        	String jourCourant = dateCourante.getDisplayName(GregorianCalendar.DAY_OF_WEEK, GregorianCalendar.SHORT, Locale.CANADA_FRENCH);
+        	jourCourant = new StringBuilder().append(jourCourant).append(" ").append(dateCourante.get(GregorianCalendar.DAY_OF_MONTH)).append(' ').append(dateCourante.getDisplayName(GregorianCalendar.MONTH, GregorianCalendar.SHORT, Locale.CANADA_FRENCH)).toString();
             TextView label = (TextView) findViewById(id);
             label.setText(jourCourant);
         	
