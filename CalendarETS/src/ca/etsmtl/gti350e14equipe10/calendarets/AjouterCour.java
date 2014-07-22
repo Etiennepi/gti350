@@ -2,7 +2,6 @@ package ca.etsmtl.gti350e14equipe10.calendarets;
 
 import java.util.Calendar;
 
-import ca.etsmtl.gti350e14equipe10.calendarets.Calendrier.ChangementHorraire;
 import ca.etsmtl.gti350e14equipe10.calendarets.Calendrier.Cour;
 
 import android.app.Activity;
