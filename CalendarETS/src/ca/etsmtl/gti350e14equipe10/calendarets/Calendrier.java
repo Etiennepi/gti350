@@ -29,16 +29,16 @@ public final class Calendrier {
 		this.cours.add(c);
 	}
 	
-	public Iterator<Travail> getTravaux() {
-		return this.travaux.iterator();
+	public Iterable<Travail> getTravaux() {
+		return this.travaux;
 	}
 	
-	public Iterator<Cour> getCours() {
-		return this.cours.iterator();
+	public Iterable<Cour> getCours() {
+		return this.cours;
 	}
 	
-	public Iterator<ChangementHorraire> getChangementsHoraires() {
-		return this.changementHorraire.iterator();
+	public Iterable<ChangementHorraire> getChangementsHoraires() {
+		return this.changementHorraire;
 	}
 	
 	public static final class Travail {

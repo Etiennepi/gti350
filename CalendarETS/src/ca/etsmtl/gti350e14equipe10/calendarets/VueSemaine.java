@@ -1,28 +1,23 @@
 package ca.etsmtl.gti350e14equipe10.calendarets;
 
-import java.util.GregorianCalendar;
 import java.util.Locale;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.util.AttributeSet;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.ScrollView;
 
 public class VueSemaine extends Activity {
-
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vue_semaine);
 
-        GregorianCalendar dateCourante = (GregorianCalendar) GregorianCalendar.getInstance();
-
-        
+        /*
         int[] jours = { R.id.jour1_label, R.id.jour2_label, R.id.jour3_label , R.id.jour4_label , R.id.jour5_label , R.id.jour6_label, R.id.jour7_label  };
         
         for( int id : jours ) {
@@ -33,6 +28,7 @@ public class VueSemaine extends Activity {
         	
             dateCourante.add(GregorianCalendar.HOUR, 24);
         }
+        */
         
     }
 
@@ -70,14 +66,5 @@ public class VueSemaine extends Activity {
         else {
         	return super.onOptionsItemSelected(item);
         }
-    }
-    
-    public class VueJour extends LinearLayout {
-
-		public VueJour(Context context, AttributeSet attrs) {
-			super(context, attrs);
-		}
-    	
-    	
     }
 }
