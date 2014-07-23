@@ -6,6 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import ca.etsmtl.gti350e14equipe10.calendarets.Calendrier.Cour;
+import ca.etsmtl.gti350e14equipe10.calendarets.Calendrier.Travail;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -26,7 +27,14 @@ public class LayoutVueSemaine extends TableLayout {
 		final int DAY_COLUMN_WIDTH = 100;
 		final int TIME_COLUMN_WIDTH = 70;
 		
-		final int[] COULEUR_COURS = { Color.CYAN, Color.argb(50, 200, 25, 200) };
+		final int[] COULEUR_COURS = {
+				Color.argb(50, 190, 214, 97),
+				Color.argb(50, 137, 232, 148),
+				Color.argb(50, 120, 213, 227),
+				Color.argb(50, 122, 245, 245),
+				Color.argb(50, 52, 221, 221),
+				Color.argb(50, 147, 226, 213)
+		};
 
         int i;
 
@@ -85,6 +93,23 @@ public class LayoutVueSemaine extends TableLayout {
         // afficher les cours
         dateCourante = (GregorianCalendar) GregorianCalendar.getInstance();
         for(i=0; i<MAX_JOURS; i++) {
+        	
+        	for(Travail travail : Calendrier.getInstance().getTravaux() ) {
+        		GregorianCalendar remise = travail.getDatetime();
+        		int anneeA = remise.get(GregorianCalendar.YEAR);
+        		int anneeB = dateCourante.get(GregorianCalendar.YEAR);
+        		int moisA = remise.get(GregorianCalendar.MONTH);
+        		int moisB = dateCourante.get(GregorianCalendar.MONTH);
+        		int jourA = remise.get(GregorianCalendar.DAY_OF_MONTH);
+        		int jourB = dateCourante.get(GregorianCalendar.DAY_OF_MONTH);
+        		
+        		if( anneeA == anneeB && moisA == moisB && jourA == jourB ) {
+        			plagesHoraires[i][remise.get(GregorianCalendar.HOUR_OF_DAY)].append(travail.getTitre());
+        		}
+        		
+        	}
+        	
+        	
         	String journee = dateCourante.getDisplayName(GregorianCalendar.DAY_OF_WEEK, GregorianCalendar.LONG, Locale.CANADA_FRENCH).toLowerCase(Locale.CANADA_FRENCH);
         	int idCours = 0;
         	for(Cour cour : Calendrier.getInstance().getCours()) {

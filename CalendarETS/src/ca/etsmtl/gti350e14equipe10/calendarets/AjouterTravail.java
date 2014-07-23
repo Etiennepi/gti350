@@ -37,9 +37,9 @@ public class AjouterTravail extends FragmentActivity {
 
 			@Override
 			public void onClick(View arg0) {
-				EditText textNotes = (EditText) findViewById(R.id.editText1);
+				EditText textNotes = (EditText) findViewById(R.id.editText2);
 				String notes = textNotes.getText().toString();
-				EditText textTitre = (EditText) findViewById(R.id.editText2);
+				EditText textTitre = (EditText) findViewById(R.id.editText1);
 				String titre = textTitre.getText().toString();
 				
 				Travail t = new Travail(titre, dateheure, notes);
@@ -77,7 +77,10 @@ public class AjouterTravail extends FragmentActivity {
 	    	String heure = new StringBuilder().append(hourOfDay).append(":").append(minute).toString();
 	    	Button bouton = (Button)findViewById(R.id.ajouter_travail_bouton_heure);
 	        bouton.setText(heure);
-	        dateheure.set(dateheure.YEAR, dateheure.MONTH, dateheure.DAY_OF_MONTH, hourOfDay, minute);
+	        int year = dateheure.get(Calendar.YEAR);
+	        int month = dateheure.get(Calendar.MONTH);
+	        int day = dateheure.get(Calendar.DAY_OF_MONTH);
+	        dateheure.set(year, month, day, hourOfDay, minute);
 	    }
 
 	}
