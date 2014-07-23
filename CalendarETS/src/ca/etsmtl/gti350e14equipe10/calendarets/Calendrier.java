@@ -2,6 +2,7 @@ package ca.etsmtl.gti350e14equipe10.calendarets;
 
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
+import java.util.Iterator;
 import java.util.List;
 
 public final class Calendrier {
@@ -26,6 +27,18 @@ public final class Calendrier {
 	
 	public void ajouterCour(Cour c) {
 		this.cours.add(c);
+	}
+	
+	public Iterator<Travail> getTravaux() {
+		return this.travaux.iterator();
+	}
+	
+	public Iterator<Cour> getCours() {
+		return this.cours.iterator();
+	}
+	
+	public Iterator<ChangementHorraire> getChangementsHoraires() {
+		return this.changementHorraire.iterator();
 	}
 	
 	public static final class Travail {
