@@ -135,7 +135,9 @@ public class LayoutVueSemaine extends TableLayout {
         			int heureDebut = parseHeure(cour.getHeureDebut());
         			int heureFin = parseHeure(cour.getHeureFin());
         			
-        			plagesHoraires[i][heureDebut].append(cour.getTitre());
+        			String infoCours = new StringBuilder().append(cour.getTitre()).append('\n').append(cour.getLocal()).toString();
+        			
+        			plagesHoraires[i][heureDebut].append(infoCours);
         			
         			if( heureDebut >= 0 && heureFin >= heureDebut ) {
         				for(int k=heureDebut; k<=heureFin && k<MAX_HEURES; k++) {
