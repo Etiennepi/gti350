@@ -5,6 +5,7 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import ca.etsmtl.gti350e14equipe10.calendarets.Calendrier.ChangementHorraire;
 import ca.etsmtl.gti350e14equipe10.calendarets.Calendrier.Cour;
 import ca.etsmtl.gti350e14equipe10.calendarets.Calendrier.Travail;
 
@@ -111,6 +112,23 @@ public class LayoutVueSemaine extends TableLayout {
         	
         	
         	String journee = dateCourante.getDisplayName(GregorianCalendar.DAY_OF_WEEK, GregorianCalendar.LONG, Locale.CANADA_FRENCH).toLowerCase(Locale.CANADA_FRENCH);
+        	
+        	// considerer les changements d'horaire
+        	for( ChangementHorraire changement : Calendrier.getInstance().getChangementsHoraires() ) {
+        		GregorianCalendar dateDeChangement = changement.getDatetime();
+        		int anneeA = dateDeChangement.get(GregorianCalendar.YEAR);
+        		int anneeB = dateCourante.get(GregorianCalendar.YEAR);
+        		int moisA = dateDeChangement.get(GregorianCalendar.MONTH);
+        		int moisB = dateCourante.get(GregorianCalendar.MONTH);
+        		int jourA = dateDeChangement.get(GregorianCalendar.DAY_OF_MONTH);
+        		int jourB = dateCourante.get(GregorianCalendar.DAY_OF_MONTH);
+        		
+        		if( anneeA == anneeB && moisA == moisB && jourA == jourB ) {
+        			journee = changement.getJournee().toLowerCase(Locale.CANADA_FRENCH);
+        			// plagesHoraires[i][remise.get(GregorianCalendar.HOUR_OF_DAY)].append(travail.getTitre());
+        		}
+        	}
+        	
         	int idCours = 0;
         	for(Cour cour : Calendrier.getInstance().getCours()) {
         		if( cour.getJournee().toLowerCase(Locale.CANADA_FRENCH).equals(journee)) {

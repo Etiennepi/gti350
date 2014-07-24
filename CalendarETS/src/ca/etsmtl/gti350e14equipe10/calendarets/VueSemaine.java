@@ -52,9 +52,6 @@ public class VueSemaine extends Activity {
             case R.id.action_ajouter_cours:
                 intent = new Intent(this, AjouterCour.class);
                 break;
-            case R.id.action_ajouter_examen:
-                // composeMessage();
-                return true;
             case R.id.action_ajouter_travaux:
             	intent = new Intent(this, AjouterTravail.class);
             	break;

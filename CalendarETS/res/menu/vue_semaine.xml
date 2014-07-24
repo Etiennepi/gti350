@@ -10,11 +10,11 @@
     <item android:id="@+id/action_ajouter_travaux"
           android:showAsAction="ifRoom"
           android:title="@string/menu_ajouter_travaux" />
-    
+    <!-- 
     <item android:id="@+id/action_ajouter_examen"
           android:showAsAction="ifRoom"
           android:title="@string/menu_ajouter_examen" />
-    
+    -->
     <item android:id="@+id/action_ajouter_cours"
           android:showAsAction="ifRoom"
           android:title="@string/menu_ajouter_cours" />

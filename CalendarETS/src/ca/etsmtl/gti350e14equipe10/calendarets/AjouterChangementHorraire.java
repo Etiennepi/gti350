@@ -77,7 +77,7 @@ public class AjouterChangementHorraire extends FragmentActivity {
 		}
 		
 		public void onDateSet(DatePicker view, int year, int month, int day) {
-			String date = new StringBuilder().append(month+11).append("-").append(day).append("-").append(year).toString();
+			String date = new StringBuilder().append(month+1).append("-").append(day).append("-").append(year).toString();
 			Button bouton = (Button)findViewById(R.id.changement_pick_date_button);
 			bouton.setText(date);
 			
