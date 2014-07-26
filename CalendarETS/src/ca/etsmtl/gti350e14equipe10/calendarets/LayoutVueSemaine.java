@@ -26,7 +26,7 @@ public class LayoutVueSemaine extends TableLayout {
 		final int MAX_HEURES = 24;
 		final int MAX_JOURS = 7;
 		final int DAY_COLUMN_WIDTH = 100;
-		final int TIME_COLUMN_WIDTH = 70;
+		final int TIME_COLUMN_WIDTH = 80;
 		
 		final int[] COULEUR_COURS = {
 				Color.argb(50, 190, 214, 97),
